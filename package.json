@@ -18,5 +18,8 @@
     "supertest": "^4.0.2"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
