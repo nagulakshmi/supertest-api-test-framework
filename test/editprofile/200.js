@@ -1,6 +1,6 @@
 
 describe('post /api/editprofile',function(){
-    it.only('it should return Profile Updated Successfully',function(){
+    it('it should return Profile Updated Successfully',function(){
       return httprequest.httpPostRequest('/api/editprofile')
       .send({"id":"11372","phone":"8056665041","division":"6","address":"RMS colony","wardno":"20"})
       .expect(200)
