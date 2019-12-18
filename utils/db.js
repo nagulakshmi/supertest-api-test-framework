@@ -1,14 +1,17 @@
 
+
+var config = require('config');
 var connection = null;
 
 var db = {
     dbConnect: function dbConnect() {
 
         connection = mysql.createConnection({
-            host: 'localhost',
+           host: 'localhost',
             user: 'root',
             password: '',
-            database:'fine_tcc'
+            database:'fine' 
+			// return config.dbconfig;
         });
         
         connection.connect(function (err) {
