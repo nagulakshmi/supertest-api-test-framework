@@ -1,16 +1,9 @@
-
+var config = require('config');
 var connection = null;
 
 var db = {
     dbConnect: function dbConnect() {
-
-        connection = mysql.createConnection({
-            host: 'localhost',
-            user: 'root',
-            password: '',
-            database:'fine_tcc'
-        });
-        
+        connection = mysql.createConnection(config.dbConnection);     
         connection.connect(function (err) {
             if (err) {
                 console.error('error connecting: ' + err.stack);

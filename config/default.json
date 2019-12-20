@@ -1,3 +1,9 @@
 {
-    "apiURL": "http://localhost:8000"
+    "apiURL": "http://localhost:8000",
+    "dbConnection": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database":"fine_tcc"
+    }
 }
